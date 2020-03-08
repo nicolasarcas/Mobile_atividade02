@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Gasoline or Ethanol</string>
+    <string name="gas">Liter price of Gasoline</string>
+    <string name="et">Liter price of Ethanol</string>
+    <string name="dica">It is better to use...</string>
+    <string name="etanol">Ethanol</string>
+    <string name="gasolina">Gasoline</string>
+    <string name="startValue">$5,00</string>
+</resources>

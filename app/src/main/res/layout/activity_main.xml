@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:columnCount="1"
+    android:rowCount="8"
+    android:useDefaultMargins="true">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|fill_horizontal"
+        android:gravity="center"
+        android:text="@string/gas"
+        android:textSize="@dimen/tamanho" />
+
+    <SeekBar
+        android:id="@+id/seekBarGasolina"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/seekbar_height"
+        android:layout_gravity="center|fill_horizontal"
+        android:max="10"
+        android:progress="5" />
+
+    <TextView
+        android:id="@+id/txtValGas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/startValue"
+        android:textSize="@dimen/tamanho" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|fill_horizontal"
+        android:gravity="center"
+        android:text="@string/et"
+        android:textSize="@dimen/tamanho" />
+
+    <SeekBar
+        android:id="@+id/seekBarEtanol"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/seekbar_height"
+        android:layout_gravity="center|fill_horizontal"
+        android:max="10"
+        android:progress="5" />
+
+    <TextView
+        android:id="@+id/txtValEt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/startValue"
+        android:textSize="@dimen/tamanho" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txtInputResultado"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:hint="@string/dica"
+            android:text="@string/gasolina"
+            android:textAlignment="center"
+            android:textSize="@dimen/tamanho" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/gasolina" />
+</GridLayout>
